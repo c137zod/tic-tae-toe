@@ -1,0 +1,50 @@
+export const GAME_STATUS_REQUESTED = "GAME_STATUS_REQUESTED";
+export const GAME_STATUS_SUCCEEDED = "GAME_STATUS_SUCCEEDED";
+export const GAME_STATUS_FAILED = "GAME_STATUS_FAILED";
+export const SCORE_FETCH_REQUESTED = "SCORE_FETCH_REQUESTED";
+export const SCORE_FETCH_SUCCEEDED = "SCORE_FETCH_SUCCEEDED";
+export const SCORE_FETCH_FAILED = "SCORE_FETCH_FAILED";
+export const SCORE_RESET_REQUESTED = "SCORE_RESET_REQUESTED";
+export const SCORE_RESET_SUCCEEDED = "SCORE_RESET_SUCCEEDED";
+export const SCORE_RESET_FAILED = "SCORE_RESET_FAILED";
+export const BOARD_FETCH_REQUESTED = "BOARD_FETCH_REQUESTED";
+export const BOARD_FETCH_SUCCEEDED = "BOARD_FETCH_SUCCEEDED";
+export const BOARD_FETCH_FAILED = "BOARD_FETCH_FAILED";
+export const MOVE_BOARD_FETCH_REQUESTED = "MOVE_BOARD_FETCH_REQUESTED";
+export const MOVE_BOARD_FETCH_SUCCEEDED = "MOVE_BOARD_FETCH_SUCCEEDED";
+export const MOVE_BOARD_FETCH_FAILED = "MOVE_BOARD_FETCH_FAILED";
+export const NEXT_GAME_REQUESTED = "NEXT_GAME_REQUESTED";
+export const NEXT_GAME_SUCCEEDED = "NEXT_GAME_SUCCEEDED";
+export const NEXT_GAME_FAILED = "NEXT_GAME_FAILED";
+export const RESET_GAME_REQUESTED = "RESET_GAME_REQUESTED";
+export const RESET_GAME_SUCCEEDED = "RESET_GAME_SUCCEEDED";
+export const RESET_GAME_FAILED = "RESET_GAME_FAILED";
+
+export const fetchStatus = () => ({
+  type: GAME_STATUS_REQUESTED,
+});
+
+export const fetchScore = () => ({
+  type: SCORE_FETCH_REQUESTED,
+});
+
+export const resetScore = () => ({
+  type: SCORE_RESET_REQUESTED,
+});
+
+export const fetchGame = () => ({
+  type: BOARD_FETCH_REQUESTED,
+});
+
+export const fetchGameMove = (index) => ({
+  type: MOVE_BOARD_FETCH_REQUESTED,
+  index,
+});
+
+export const fetchNewGame = () => ({
+  type: NEXT_GAME_REQUESTED,
+});
+
+export const fetchResetGame = () => ({
+  type: RESET_GAME_REQUESTED,
+});
